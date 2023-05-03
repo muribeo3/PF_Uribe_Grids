@@ -1,0 +1,260 @@
+/* GENERAL */
+body {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header,
+footer {
+  background-color: white;
+}
+
+.Ubicacion a {
+  color: #FF4267;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+p {
+  text-align: justify;
+  margin: 5px;
+}
+
+.mainGrid,
+.card {
+  background-image: url(../imgs/medellin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.m20 {
+  margin: 20px;
+}
+
+.bgPrincipal {
+  background-color: lightslategray;
+}
+
+.bgLGrey {
+  background-color: lightgrey;
+}
+
+.flexCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 20px;
+  align-items: center;
+}
+
+div h1 {
+  text-align: center;
+}
+
+/*VISTA DESKTOP*/
+@media (min-width: 1024px) {
+  /*GENERAL*/
+  .grid {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+  nav a {
+    font-weight: bold;
+    color: #FF4267;
+    font-size: 45px;
+    text-shadow: 3px 3px 3px #000000;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .Ubicacion a {
+    font-size: 30px;
+  }
+  header,
+  footer,
+  ul,
+  .Redes,
+  .Ubicacion,
+  .infoCreacion {
+    display: flex;
+    flex-direction: row;
+  }
+  ul {
+    padding-inline-start: 0;
+  }
+  li {
+    padding: 10px;
+    margin: 10px;
+  }
+  .jCSpaceBetween {
+    justify-content: space-between;
+  }
+  .jCSpaceEvenly {
+    justify-content: space-evenly;
+  }
+  h1 {
+    font-size: 50px;
+    color: #FF4267;
+  }
+  h2 {
+    font-size: 30px;
+    color: #FF4267;
+  }
+  h3 {
+    font-size: 20px;
+    color: #FF4267;
+  }
+  p {
+    font-size: 30px;
+  }
+  /* INDEX*/
+  .mainGrid {
+    display: grid;
+    grid-template-areas: "encabezado1 imagenParrafo1" "parrafo1 imagenParrafo1" "imagenParrafo2 encabezado2" "imagenParrafo2 parrafo2";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 50% 50%;
+  }
+  .encabezado1 {
+    grid-area: encabezado1;
+  }
+  .encabezado2 {
+    grid-area: encabezado2;
+  }
+  .parrafo1 {
+    grid-area: parrafo1;
+  }
+  .parrafo2 {
+    grid-area: parrafo2;
+  }
+  .imagenParrafo1 {
+    grid-area: imagenParrafo1;
+  }
+  .imagenParrafo2 {
+    grid-area: imagenParrafo2;
+  }
+  /*GRID EXPERIENCIAS*/
+  .gridExperiencias {
+    display: grid;
+    grid-template-areas: "encabezadoExperiencias encabezadoExperiencias encabezadoExperiencias encabezadoExperiencias" "card1 card2 card3 card4";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+  }
+  .encabezadoExperiencias {
+    grid-area: encabezadoExperiencias;
+  }
+  .card1 {
+    grid-area: card1;
+  }
+  .card2 {
+    grid-area: card2;
+  }
+  .card3 {
+    grid-area: card3;
+  }
+  .card4 {
+    grid-area: card4;
+  }
+  /* ---------- GRID SERVICIOS */
+}
+@media (max-width: 768px) {
+  /*GENERAL*/
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+    flex-wrap: wrap;
+  }
+  .mg10 {
+    margin: 10px;
+  }
+  .Redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  li {
+    padding: 2px;
+    margin: 2px;
+  }
+  .Ubicacion a {
+    font-size: 20px;
+  }
+  main,
+  footer,
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav a {
+    font-weight: bold;
+    color: #FF4267;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000000;
+  }
+  h1 {
+    font-size: 30px;
+    color: #FF4267;
+  }
+  h2 {
+    font-size: 20px;
+    color: #FF4267;
+  }
+  .mg10 {
+    margin: 10px;
+  }
+  .gridExperiencias {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
