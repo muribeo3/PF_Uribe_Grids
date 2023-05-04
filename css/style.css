@@ -13,7 +13,7 @@ a {
 
 header,
 footer {
-  background-color: white;
+  background-color: #ffd9e1;
 }
 
 .Ubicacion a {
@@ -37,7 +37,7 @@ footer {
 
 p {
   text-align: justify;
-  margin: 5px;
+  margin: 10px;
 }
 
 .mainGrid,
@@ -47,29 +47,17 @@ p {
   background-repeat: no-repeat;
 }
 
+.mainGrid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .p20 {
   padding: 20px;
 }
 
-.mb20 {
-  margin-bottom: 20px;
-}
-
 .m20 {
   margin: 20px;
-}
-
-.bgPrincipal {
-  background-color: lightslategray;
-}
-
-.bgLGrey {
-  background-color: lightgrey;
-}
-
-.flexCard {
-  display: flex;
-  flex-direction: column;
 }
 
 .card {
@@ -81,7 +69,133 @@ div h1 {
   text-align: center;
 }
 
-/*VISTA DESKTOP*/
+.gridCardsTipoDos h2 {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  nav a {
+    font-weight: bold;
+    color: #FF4267;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #000000;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .Ubicacion a {
+    font-size: 30px;
+  }
+  ul {
+    padding-inline-start: 0;
+  }
+  li {
+    padding: 10px;
+    margin: 10px;
+  }
+  .jCSpaceBetween {
+    justify-content: space-between;
+  }
+  .jCSpaceEvenly {
+    justify-content: space-evenly;
+  }
+  h1 {
+    font-size: 45px;
+    color: #FF4267;
+  }
+  h2 {
+    font-size: 30px;
+    color: #FF4267;
+  }
+  h3 {
+    font-size: 20px;
+    color: #FF4267;
+  }
+  p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  /*GENERAL*/
+  ul {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .mg10 {
+    margin: 10px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  li {
+    padding: 2px;
+    margin: 2px;
+  }
+  .Ubicacion a {
+    font-size: 20px;
+  }
+  nav a {
+    font-weight: bold;
+    color: #FF4267;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000000;
+  }
+  h1 {
+    font-size: 30px;
+    color: #FF4267;
+  }
+  h2 {
+    font-size: 20px;
+    color: #FF4267;
+  }
+}
+.flexCard {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  header,
+  footer,
+  ul,
+  .Redes,
+  .Ubicacion,
+  .infoCreacion {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  /*GENERAL*/
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main,
+  footer,
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridCardsVerticales {
+    display: flex;
+    flex-direction: column;
+  }
+  .gridCardsDos {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (min-width: 1024px) {
   /*GENERAL*/
   .grid {
@@ -99,57 +213,6 @@ div h1 {
   footer {
     grid-area: footer;
   }
-  nav a {
-    font-weight: bold;
-    color: #FF4267;
-    font-size: 45px;
-    text-shadow: 3px 3px 3px #000000;
-  }
-  .logo {
-    width: 150px;
-    height: 150px;
-  }
-  .Ubicacion a {
-    font-size: 30px;
-  }
-  header,
-  footer,
-  ul,
-  .Redes,
-  .Ubicacion,
-  .infoCreacion {
-    display: flex;
-    flex-direction: row;
-  }
-  ul {
-    padding-inline-start: 0;
-  }
-  li {
-    padding: 10px;
-    margin: 10px;
-  }
-  .jCSpaceBetween {
-    justify-content: space-between;
-  }
-  .jCSpaceEvenly {
-    justify-content: space-evenly;
-  }
-  h1 {
-    font-size: 50px;
-    color: #FF4267;
-  }
-  h2 {
-    font-size: 30px;
-    color: #FF4267;
-  }
-  h3 {
-    font-size: 20px;
-    color: #FF4267;
-  }
-  p {
-    font-size: 30px;
-  }
-  /* INDEX*/
   .mainGrid {
     display: grid;
     grid-template-areas: "encabezado1 imagenParrafo1" "parrafo1 imagenParrafo1" "imagenParrafo2 encabezado2" "imagenParrafo2 parrafo2";
@@ -174,15 +237,14 @@ div h1 {
   .imagenParrafo2 {
     grid-area: imagenParrafo2;
   }
-  /*GRID EXPERIENCIAS*/
-  .gridExperiencias {
+  .gridCardsVerticales {
     display: grid;
-    grid-template-areas: "encabezadoExperiencias encabezadoExperiencias encabezadoExperiencias encabezadoExperiencias" "card1 card2 card3 card4";
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "encabezadoSeccion encabezadoSeccion encabezadoSeccion " "card1 card2 card3";
+    grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: auto auto;
   }
-  .encabezadoExperiencias {
-    grid-area: encabezadoExperiencias;
+  .encabezadoSeccion {
+    grid-area: encabezadoSeccion;
   }
   .card1 {
     grid-area: card1;
@@ -193,67 +255,41 @@ div h1 {
   .card3 {
     grid-area: card3;
   }
+  .gridCardsEventos {
+    display: grid;
+    grid-template-areas: "encabezadoSeccion1 encabezadoSeccion1 " "card4 card5 " "card6 card7";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+  }
+  .encabezadoSeccion1 {
+    grid-area: encabezadoSeccion1;
+  }
   .card4 {
     grid-area: card4;
   }
-  /* ---------- GRID SERVICIOS */
-}
-@media (max-width: 768px) {
-  /*GENERAL*/
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 0;
-    flex-wrap: wrap;
+  .card5 {
+    grid-area: card5;
   }
-  .mg10 {
-    margin: 10px;
+  .card6 {
+    grid-area: card6;
   }
-  .Redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .card7 {
+    grid-area: card7;
   }
-  .logo {
-    width: 100px;
-    height: 100px;
+  .gridCardsTipoDos {
+    display: grid;
+    grid-template-areas: "imagen Titulo " "imagen Texto ";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
   }
-  li {
-    padding: 2px;
-    margin: 2px;
+  .imagen {
+    grid-area: imagen;
   }
-  .Ubicacion a {
-    font-size: 20px;
+  .Titulo {
+    grid-area: Titulo;
   }
-  main,
-  footer,
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  nav a {
-    font-weight: bold;
-    color: #FF4267;
-    font-size: 20px;
-    text-shadow: 1px 1px 1px #000000;
-  }
-  h1 {
-    font-size: 30px;
-    color: #FF4267;
-  }
-  h2 {
-    font-size: 20px;
-    color: #FF4267;
-  }
-  .mg10 {
-    margin: 10px;
-  }
-  .gridExperiencias {
-    display: flex;
-    flex-direction: column;
+  .Texto {
+    grid-area: Texto;
   }
 }
 

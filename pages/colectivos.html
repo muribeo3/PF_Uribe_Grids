@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colectivos | Medellín es Arte</title>
+    <!-- SEO-->
+    <meta name="description"
+        content="Información sobre colectivos artísticos de la ciudad de Medellín, como del Colectivo el Cuerpo Habla, la casa Morada y Teatro Matacandelas. ">
+    <meta name="keywords"
+        content="Medellín, arte, cultura, colectivos artísticos, Colectivo el Cuerpo Habla, Colectivo la Casa Morada, Colectivo Teatro Matacandelas.">
+    <title>Colectivos Artísticos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../imgs/logo.png">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../imgs/logo200.png">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -20,7 +27,7 @@
         <!-- LOGO + NAV -->
         <header class="jCSpaceBetween alignCenter">
             <div class="logo">
-                <img src="../imgs/logo.png" alt="logo Medellin es Arte" class="logo">
+                <img src="../imgs/logo200.png" alt="logo Medellin es Arte" class="logo">
             </div>
             <nav>
                 <ul>
@@ -32,46 +39,42 @@
                 </ul>
             </nav>
         </header>
-        <main class="gridExperiencias">
-            <div class="encabezadoExperiencias">
-                <h1>COLECTIVOS ARTÍSTICOS EN MEDELLÍN</h1>
+        <main class="gridCardsVerticales">
+            <div class="encabezadoSeccion">
+                <h1 data-aos="zoom-in-up" data-aos-duration="3000">COLECTIVOS ARTÍSTICOS EN MEDELLÍN</h1>
             </div>
-            <div class="card card1 flexCard m20">
-                <img src="../imgs/colectivoCuerpoHabla.jpg" alt="colectivo Cuerpo Habla" class="p20 img-fluid">
-                <h1 class="p20">EL CUERPO HABLA</h1>
+            <div class="card card1 flexCard m20" data-aos="fade-up" data-aos-duration="3000">
+
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">EL CUERPO HABLA</h1>
                 <p class="p20">El Cuerpo Habla nace en el 2003 como una materia electiva para los estudiantes de Artes
                     Plásticas de la Facultad de Artes de la Universidad de Antioquia. En el 2007 surge el semillero de
                     investigación pero se consolida como colectivo artístico independiente en el 2009 por la necesidad
                     de inquirir rigurosamente hacia la relación del arte, el cuerpo y la ciudad.
                 </p>
-            </div>
-            <div class="card card2 flexCard m20">
                 <img src="../imgs/colectivoCuerpoHabla.jpg" alt="colectivo Cuerpo Habla" class="p20 img-fluid">
-                <h1 class="p20">EL CUERPO HABLA</h1>
-                <p class="p20">El Cuerpo Habla nace en el 2003 como una materia electiva para los estudiantes de Artes
-                    Plásticas de la Facultad de Artes de la Universidad de Antioquia. En el 2007 surge el semillero de
-                    investigación pero se consolida como colectivo artístico independiente en el 2009 por la necesidad
-                    de inquirir rigurosamente hacia la relación del arte, el cuerpo y la ciudad.
-                </p>
             </div>
-            <div class="card card3 flexCard  m20">
-                <img src="../imgs/colectivoCuerpoHabla.jpg" alt="colectivo Cuerpo Habla" class="p20 img-fluid">
-                <h1 class="p20">EL CUERPO HABLA</h1>
-                <p class="p20">El Cuerpo Habla nace en el 2003 como una materia electiva para los estudiantes de Artes
-                    Plásticas de la Facultad de Artes de la Universidad de Antioquia. En el 2007 surge el semillero de
-                    investigación pero se consolida como colectivo artístico independiente en el 2009 por la necesidad
-                    de inquirir rigurosamente hacia la relación del arte, el cuerpo y la ciudad.
+            <div class="card card2 flexCard m20" data-aos="fade-up" data-aos-duration="3000">
+
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">LA CASA MORADA</h1>
+                <p class="p20">La Casa Morada es un espacio de creación y
+                    producción artística, cultural y social que ofrece una amplia variedad de actividades y
+                    eventos para la comunidad. Su labor es la promoción de la cultura y la educación
+                    artística. Su trabajo ha sido reconocido por instituciones
+                    culturales y organizaciones sociales en Colombia y en el extranjero.
                 </p>
+                <img src="../imgs/laCasaMorada.jpg" alt="Colectivo La Casa Morada" class="p20 img-fluid">
             </div>
-            <div class="card card4 flexCard  m20">
-                <img src="../imgs/colectivoCuerpoHabla.jpg" alt="colectivo Cuerpo Habla" class="p20 img-fluid">
-                <h1 class="p20">EL CUERPO HABLA</h1>
-                <p class="p20">El Cuerpo Habla nace en el 2003 como una materia electiva para los estudiantes de Artes
-                    Plásticas de la Facultad de Artes de la Universidad de Antioquia. En el 2007 surge el semillero de
-                    investigación pero se consolida como colectivo artístico independiente en el 2009 por la necesidad
-                    de inquirir rigurosamente hacia la relación del arte, el cuerpo y la ciudad.
-                </p>
+            <div class="card card3 flexCard  m20" data-aos="fade-up" data-aos-duration="3000">
+
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">TEATRO MATACANDELAS</h1>
+                <p class="p20">El Colectivo Teatro Matacandelas es un
+                    referente del teatro colombiano y un ejemplo de cómo el arte y la cultura pueden ser
+                    utilizados como herramientas de transformación social y cultural. Su trabajo teatral y
+                    pedagógico ha sido un aporte importante a la sociedad colombiana y ha sido reconocido y
+                    valorado en Colombia y en el extranjero.</p>
+                <img src="../imgs/teatroMatacandelas.jpg" alt="Colectivo Teatro Matacandelas" class="p20 img-fluid">
             </div>
+
 
         </main>
         <footer class="jCSpaceEvenly">
@@ -102,6 +105,11 @@
         </footer>
 
     </div>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,138 @@
+@media (min-width:1024px) {
+
+    /*GENERAL*/
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .mainGrid {
+        display: grid;
+        grid-template-areas:
+            "encabezado1 imagenParrafo1"
+            "parrafo1 imagenParrafo1"
+            "imagenParrafo2 encabezado2"
+            "imagenParrafo2 parrafo2";
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 50% 50%;
+    }
+
+    .encabezado1 {
+        grid-area: encabezado1;
+    }
+
+    .encabezado2 {
+        grid-area: encabezado2;
+    }
+
+    .parrafo1 {
+        grid-area: parrafo1;
+    }
+
+    .parrafo2 {
+        grid-area: parrafo2;
+    }
+
+    .imagenParrafo1 {
+        grid-area: imagenParrafo1;
+    }
+
+    .imagenParrafo2 {
+        grid-area: imagenParrafo2;
+    }
+
+    .gridCardsVerticales {
+        display: grid;
+        grid-template-areas:
+            "encabezadoSeccion encabezadoSeccion encabezadoSeccion "
+            "card1 card2 card3";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto auto;
+    }
+
+    .encabezadoSeccion {
+        grid-area: encabezadoSeccion;
+    }
+
+    .card1 {
+        grid-area: card1;
+    }
+
+    .card2 {
+        grid-area: card2;
+    }
+
+    .card3 {
+        grid-area: card3;
+    }
+
+    .gridCardsEventos {
+        display: grid;
+        grid-template-areas:
+            "encabezadoSeccion1 encabezadoSeccion1 "
+            "card4 card5 "
+            "card6 card7";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .encabezadoSeccion1 {
+        grid-area: encabezadoSeccion1;
+    }
+
+    .card4 {
+        grid-area: card4;
+    }
+
+    .card5 {
+        grid-area: card5;
+    }
+
+    .card6 {
+        grid-area: card6;
+    }
+
+    .card7 {
+        grid-area: card7;
+    }
+
+    .gridCardsTipoDos {
+        display: grid;
+        grid-template-areas:
+            "imagen Titulo "
+            "imagen Texto ";
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto auto;
+
+    }
+
+    .imagen {
+        grid-area: imagen;
+    }
+
+    .Titulo {
+        grid-area: Titulo;
+    }
+
+    .Texto {
+        grid-area: Texto;
+    }
+}

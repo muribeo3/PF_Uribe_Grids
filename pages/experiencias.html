@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiencias | Medellín es Arte</title>
+    <!-- SEO-->
+    <meta name="description"
+        content="Información sobre experiencias artísticas de la ciudad de Medellín, como el tour de la Comuna 13, el museo de Antioquia y el Teatro Metropolitano.">
+    <meta name="keywords"
+        content="Medellín, arte, cultura, experiencias, Comuna 13, Museo de Antioquia, Teatro Metropolitano">
+    <title>Experiencias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../imgs/logo.png">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../imgs/logo200.png">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -20,7 +27,7 @@
         <!-- LOGO + NAV -->
         <header class="jCSpaceBetween alignCenter">
             <div class="logo">
-                <img src="../imgs/logo.png" alt="logo Medellin es Arte" class="logo">
+                <img src="../imgs/logo200.png" alt="logo Medellin es Arte" class="logo">
             </div>
             <nav>
                 <ul>
@@ -33,39 +40,39 @@
             </nav>
         </header>
 
-        <main class="gridExperiencias">
-            <div class="encabezadoExperiencias">
-                <h1>EXPERIENCIAS DE ARTE EN MEDELLÍN</h1>
+        <main class="gridCardsVerticales">
+            <div class="encabezadoSeccion">
+                <h1 data-aos="zoom-in-up" data-aos-duration="3000">EXPERIENCIAS DE ARTE EN MEDELLÍN</h1>
             </div>
-            <div class="card card1 flexCard m20">
+
+            <div class="card card1 flexCard m20" data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">COMUNA 13</h1>
                 <img src="../imgs/comuna13.jpg" alt="Comuna 13 Medellin" class="p20 img-fluid">
-                <h1 class="p20">COMUNA 13</h1>
-                <p class="p20">La relación directa que había entre la Comuna 13 y la violencia, poco a poco ha ido
-                    quedando atrás, gracias el esfuerzo de su comunidad, especialmente los jóvenes artistas. Actualmente
-                    la han convertido en un sitio totalmente turístico y realmente vale la pena
-                    ir a conocerlo.</p>
+
+                <p class="p20"> El tour de la Comuna 13 es una experiencia que
+                    te lleva a través de un barrio vibrante y colorido, que ha
+                    experimentado una transformación significativa en las últimas décadas gracias a iniciativas
+                    gubernamentales y comunitarias que han promovido la inclusión social, el arte y la cultura.
+                </p>
             </div>
-            <div class="card card2 flexCard m20">
-                <img src="../imgs/comuna13.jpg" alt="Comuna 13 Medellin" class="p20 img-fluid">
-                <h1 class="p20">EL CASTILLO</h1>
-                <p class="p20">Fundación el Museo el Castillo que cuenta con museo, escuela de arte, exposiciones y
-                    espacios abiertos para el distrute. Su Museo cuenta con la mayor colección de artes decorativas de
-                    Medellín, un atractivo turístico significativo para los amantes de la cultura, el arte y la
-                    tradición.</p>
+            <div class="card card2 flexCard m20" data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">MUSEO DE ANTIOQUIA</h1>
+                <img src="../imgs/museo-de-antioquia.jpg" alt="Museo de Antioquia" class="p20 img-fluid">
+
+                <p class="p20">El museo cuenta con una colección permanente
+                    que incluye arte colonial y contemporáneo, así como la mayor colección de obras del famoso
+                    artista colombiano Fernando Botero. Además de esta, el Museo de Antioquia
+                    también organiza exposiciones temporales que presentan una amplia variedad de temas y
+                    artistas.</p>
             </div>
-            <div class="card card3 flexCard  m20">
-                <img src="../imgs/comuna13.jpg" alt="Comuna 13 Medellin" class="p20 img-fluid">
-                <h1 class="p20">MAMM</h1>
-                <p class="p20">Encuentra en el Museo de Arte Moderno en Medellín diferentes exposiciones, eventos y
-                    espacios relacionados con el arte
-                    , el cine y la cultura en Medellín.</p>
-            </div>
-            <div class="card card4 flexCard  m20">
-                <img src="../imgs/comuna13.jpg" alt="Comuna 13 Medellin" class="p20 img-fluid">
-                <h1 class="p20">MUSEO DE ANTIOQUIA</h1>
-                <p class="p20">El Museo de Antioquia es un museo situado en el centro de Medellín que alberga
-                    colecciones con relevancia internacional. Fue el primero fundado en el departamento de Antioquia y
-                    el segundo en Colombia. Se sitúa frente a la plaza Botero.</p>
+            <div class="card card3 flexCard  m20" data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">TEATRO METROPOLITANO</h1>
+                <img src="../imgs/metropolitano.jpg" alt="Teatro Metropolitano" class="p20 img-fluid">
+
+                <p class="p20">El Teatro es uno de los teatros más importantes
+                    y emblemáticos de la ciudad. Este ha sido un importante espacio cultural en
+                    Medellín, acogiendo una amplia variedad de eventos artísticos y culturales, como óperas,
+                    conciertos, espectáculos de danza, teatro, eventos corporativos y otros eventos especiales.</p>
             </div>
 
         </main>
@@ -97,6 +104,11 @@
         </footer>
 
     </div>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

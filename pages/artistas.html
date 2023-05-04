@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artistas | Medellín es Arte</title>
+    <!-- SEO-->
+    <meta name="description"
+        content="Información sobre artistas de la ciudad de Medellín, como el grupo Madera Jazz, Las hermanas Añéz y la cantante María Mulata.">
+    <meta name="keywords" content="Medellín, arte, cultura, artistas, Madera Jazz, Las Añéz, María Mulata.">
+    <title>Artistas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../imgs/logo.png">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../imgs/logo200.png">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -20,7 +26,7 @@
         <!-- LOGO + NAV -->
         <header class="jCSpaceBetween alignCenter">
             <div class="logo">
-                <img src="../imgs/logo.png" alt="logo Medellin es Arte" class="logo">
+                <img src="../imgs/logo200.png" alt="logo Medellin es Arte" class="logo">
             </div>
             <nav>
                 <ul>
@@ -33,38 +39,39 @@
             </nav>
         </header>
 
-        <main class="gridExperiencias">
-            <div class="encabezadoExperiencias">
-                <h1>ARTISTAS EN MEDELLÍN</h1>
+        <main class="gridCardsVerticales">
+            <div class="encabezadoSeccion">
+                <h1 data-aos="zoom-in-up" data-aos-duration="3000">ARTISTAS EN MEDELLÍN</h1>
             </div>
-            <div class="card card1 flexCard m20">
+            <div class="card card1 flexCard m20 " data-aos="fade-up" data-aos-duration="3000">
                 <img src="../imgs/maderaJazz.jpg" alt="maderaJazz" class="p20 img-fluid">
-                <h1 class="p20">MADERA JAZZ</h1>
-                <p class="p20">Grupo joven de Jazz de Medellín, que cada vez gana más reconocimiento. Su principal
-                    objetivo es fomentar el Jazz en nuestra ciudad, y a su vez, trasladarlo a lo largo y ancho del país.
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">MADERA JAZZ</h1>
+                <p class="p20">Grupo joven de Jazz de Medellín, que cada vez
+                    gana más reconocimiento. Su
+                    principal
+                    objetivo es fomentar el Jazz en nuestra ciudad, y a su vez, trasladarlo a lo largo y ancho
+                    del país, haciendo combinaciones de distintos géneros y ritmos. Adicionalmente creando sus
+                    propios temas.
                 </p>
             </div>
-            <div class="card card2 flexCard m20">
-                <img src="../imgs/maderaJazz.jpg" alt="maderaJazz" class="p20 img-fluid">
-                <h1 class="p20">MADERA JAZZ</h1>
-                <p class="p20">Grupo joven de Jazz de Medellín, que cada vez gana más reconocimiento. Su principal
-                    objetivo es fomentar el Jazz en nuestra ciudad, y a su vez, trasladarlo a lo largo y ancho del país.
-                </p>
+            <div class="card card2 flexCard m20" data-aos="fade-up" data-aos-duration="3000">
+                <img src="../imgs/hermanasAnez.jpg" alt="Grupo Las Añez" class="p20 img-fluid">
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">LAS AÑEZ</h1>
+                <p class="p20">Este dúo musical integrado por las
+                    hermanas Ana
+                    y María Laura Añez, ha ganado reconocimiento por su propuesta musical que mezcla elementos
+                    del folclor colombiano con la música pop y electrónica. Han lanzado dos álbumes: "El sol
+                    también es una estrella" y "Nómada". </p>
             </div>
-            <div class="card card3 flexCard  m20">
-                <img src="../imgs/maderaJazz.jpg" alt="maderaJazz" class="p20 img-fluid">
-                <h1 class="p20">MADERA JAZZ</h1>
-                <p class="p20">Grupo joven de Jazz de Medellín, que cada vez gana más reconocimiento. Su principal
-                    objetivo es fomentar el Jazz en nuestra ciudad, y a su vez, trasladarlo a lo largo y ancho del país.
-                </p>
+            <div class="card card3 flexCard  m20" data-aos="fade-up" data-aos-duration="3000">
+                <img src="../imgs/mariaMulata.jpg" alt="Cantante Maria Mulata" class="p20 img-fluid">
+                <h1 class="p20" data-aos="fade-right" data-aos-duration="3000">MARIA MULATA</h1>
+                <p class="p20">Cantante y compositora de música
+                    afrocolombiana, María Mulata ha sido reconocida por su trabajo en la promoción de la cultura
+                    y la música tradicional de la costa atlántica de Colombia. Su música fusiona elementos de la
+                    cumbia, el bullerengue, el mapalé y otros ritmos tradicionales.</p>
             </div>
-            <div class="card card4 flexCard  m20">
-                <img src="../imgs/maderaJazz.jpg" alt="maderaJazz" class="p20 img-fluid">
-                <h1 class="p20">MADERA JAZZ</h1>
-                <p class="p20">Grupo joven de Jazz de Medellín, que cada vez gana más reconocimiento. Su principal
-                    objetivo es fomentar el Jazz en nuestra ciudad, y a su vez, trasladarlo a lo largo y ancho del país.
-                </p>
-            </div>
+
 
         </main>
         <footer class="jCSpaceEvenly">
@@ -95,6 +102,11 @@
         </footer>
 
     </div>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

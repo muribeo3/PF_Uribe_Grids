@@ -1,0 +1,55 @@
+.flexCard {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:1024px) {
+
+    header,
+    footer,
+    ul,
+    .Redes,
+    .Ubicacion,
+    .infoCreacion {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media (max-width:768px) {
+
+    /*GENERAL*/
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    main,
+    footer,
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gridCardsVerticales {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridCardsDos {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

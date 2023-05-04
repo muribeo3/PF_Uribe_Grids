@@ -1,0 +1,206 @@
+/* GENERAL */
+body {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header,
+footer {
+    background-color: #ffd9e1;
+}
+
+.Ubicacion a {
+    color: #FF4267;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 10px;
+}
+
+
+.mainGrid,
+.card {
+    background-image: url(../imgs/medellin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.mainGrid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.p20 {
+    padding: 20px;
+}
+
+
+
+.m20 {
+    margin: 20px;
+}
+
+
+.card {
+    border-radius: 20px;
+    align-items: center;
+}
+
+div h1 {
+    text-align: center;
+}
+
+.gridCardsTipoDos h2 {
+    text-align: center;
+
+}
+
+@media (min-width:1024px) {
+
+
+    nav a {
+
+        font-weight: bold;
+        color: #FF4267;
+        font-size: 40px;
+        text-shadow: 3px 3px 3px #000000;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .Ubicacion a {
+        font-size: 30px;
+    }
+
+
+
+    ul {
+        padding-inline-start: 0
+    }
+
+    li {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .jCSpaceBetween {
+        justify-content: space-between;
+    }
+
+
+    .jCSpaceEvenly {
+        justify-content: space-evenly;
+    }
+
+    h1 {
+        font-size: 45px;
+        color: #FF4267;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: #FF4267;
+    }
+
+
+    h3 {
+        font-size: 20px;
+        color: #FF4267;
+    }
+
+    p {
+        font-size: 25px;
+
+    }
+}
+
+@media (max-width:768px) {
+
+    /*GENERAL*/
+    ul {
+        justify-content: center;
+        padding-left: 0;
+
+    }
+
+    .mg10 {
+        margin: 10px;
+    }
+
+
+
+    .logo {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    li {
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .Ubicacion a {
+        font-size: 20px;
+    }
+
+
+
+
+
+    nav a {
+
+        font-weight: bold;
+        color: #FF4267;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px #000000;
+    }
+
+    h1 {
+        font-size: 30px;
+        color: #FF4267;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #FF4267;
+    }
+
+
+
+
+}

@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos | Medellín es Arte</title>
+    <!-- SEO-->
+    <meta name="description"
+        content="Información sobre eventos de arte de la ciudad de Medellín, por ejemplo el MedeJazz, Festitango, Festival Internacional de Poesía de Medellín y el Festival Internacional de Cine de Medellín.">
+    <meta name="keywords"
+        content="Medellín, arte, cultura, eventos, MedeJazz, Festitango, Festival Internacional de Poesía de Medellín, Festival Internacional de Cine de Medellín">
+    <title>Eventos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="../imgs/logo.png">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shortcut icon" href="../imgs/logo200.png">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -20,7 +27,7 @@
         <!-- LOGO + NAV -->
         <header class="jCSpaceBetween alignCenter">
             <div class="logo">
-                <img src="../imgs/logo.png" alt="logo Medellin es Arte" class="logo">
+                <img src="../imgs/logo200.png" alt="logo Medellin es Arte" class="logo">
             </div>
             <nav>
                 <ul>
@@ -32,48 +39,65 @@
                 </ul>
             </nav>
         </header>
-        <main class="gridExperiencias">
-            <div class="encabezadoExperiencias">
-                <h1>PRÓXIMOS EVENTOS</h1>
+        <main class="gridCardsEventos">
+            <div class="encabezadoSeccion1">
+                <h1 data-aos="zoom-in-up" data-aos-duration="3000">PRÓXIMOS EVENTOS EN MEDELLÍN</h1>
             </div>
-            <div class="card card1 flexCard m20">
-                <img src="../imgs/medejazz.jpg" alt="MedeJazz" class=" p20 img-fluid">
-                <h1 class="p20">MEDEJAZZ</h1>
-                <p class="p20">El Festival internacional de jazz de Medellín (MedeJazz) es un evento de diez días de
+            <div class="card card4 flexCard m20 gridCardsTipoDos" data-aos="fade-up" data-aos-duration="3000">
+                <img src="../imgs/jazz.jpg" alt="Persona interpretando en MedeJazz" class=" p10 img-fluid imagen">
+                <h2 class="p10 Titulo" data-aos="fade-right" data-aos-duration="3000">MEDEJAZZ</h2>
+                <p class="p10 Texto">El Festival internacional de jazz de Medellín (MedeJazz) es un evento de diez días
+                    de
                     duración que anualmente se realiza en esa ciudad en el mes de septiembre, con participación de
                     artistas de este género y sus sub-géneros provenientes de varios países del mundo. El Festival
                     Internacional de jazz de Medellín es un evento que en poco tiempo se ha consolidado como
                     uno de los más importantes festivales de este género en Colombia, según los críticos, músicos y
-                    aficionados a la música en el país
+                    aficionados a la música en el país.
                 </p>
             </div>
-            <div class="card card2 flexCard m20">
-                <img src="../imgs/medejazz.jpg" alt="MedeJazz" class=" p20 img-fluid">
-                <h1 class="p20">MEDEJAZZ</h1>
-                <p class="p20">El Festival internacional de jazz de Medellín (MedeJazz) es un evento de diez días de
-                    duración que anualmente se realiza en esa ciudad en el mes de septiembre, con participación de
-                    artistas de este género y sus sub-géneros provenientes de varios países del mundo. El Festival
-                    Internacional de jazz de Medellín es un evento que en poco tiempo se ha consolidado como
-                    uno de los más importantes festivales de este género en Colombia, según los críticos, músicos y
-                    aficionados a la música en el país
+            <div class="card card5 flexCard m20 gridCardsTipoDos" data-aos="fade-up" data-aos-duration="3000">
+                <img src="../imgs/festitango.jpg" alt="Bailarines en Festitango" class=" p10 img-fluid imagen">
+                <h2 class="p10 Titulo" data-aos="fade-right" data-aos-duration="3000">FESTITANGO</h2>
+                <p class="p10 Texto">Festitango es un festival de
+                    música y danza. El festival está dedicado al tango, uno de los géneros musicales más
+                    populares de
+                    Argentina, y cuenta con la participación de artistas locales, nacionales e
+                    internacionales.
+
+                    Durante el festival, se realizan una serie de actividades como conciertos, milongas,
+                    clases magistrales, talleres y espectáculos de danza. También se organizan eventos
+                    especiales como la elección de la reina del tango y la presentación de películas
+                    relacionadas con el género.
                 </p>
             </div>
-            <div class="card card3 flexCard  m20">
-                <img src="../imgs/tango.jpg" alt="Festival de Tango Medellín" class="p20 img-fluid">
-                <h1 class="p20">FESTITANGO</h1>
-                <p class="p20">El evento congrega tangueros de muchos sitios del mundo, y es catalogado como el segundo
-                    festival de Tango más importante del mundo. Es un evento que celebra la historia del tango, el
-                    baile, los cantores, bandoneonistas y otras representaciones del género.
-                </p>
+
+
+            <div class="card card6 flexCard  m20 gridCardsTipoDos " data-aos="fade-up" data-aos-duration="3000">
+                <img src="../imgs/poesia.jpg" alt="Evento del Festival Internacional de Poesía De Medellín"
+                    class="p10 img-fluid imagen">
+                <h2 class="p10 Titulo" data-aos="fade-right" data-aos-duration="3000">FESTIVAL INTERNACIONAL
+                    DE POESIA DE MEDELLIN </h2>
+                <p class="p10 Texto">El Festival Internacional de
+                    Poesía de Medellín ha logrado reunir a poetas de más de 150 países y ha sido un
+                    espacio para la difusión de la poesía en diferentes lenguas, así como para el
+                    intercambio cultural y el diálogo intercultural. El festival se ha convertido en un
+                    referente mundial de la poesía y de la cultura en general, y ha contribuido a la
+                    consolidación de Medellín como una ciudad cultural y turística en Colombia.</p>
             </div>
-            <div class="card card4 flexCard  m20">
-                <img src="../imgs/tango.jpg" alt="Festival de Tango Medellín" class="p20 img-fluid">
-                <h1 class="p20">FESTITANGO</h1>
-                <p class="p20">El evento congrega tangueros de muchos sitios del mundo, y es catalogado como el segundo
-                    festival de Tango más importante del mundo. Es un evento que celebra la historia del tango, el
-                    baile, los cantores, bandoneonistas y otras representaciones del género.
-                </p>
+            <div class="card card7 flexCard  m20 gridCardsTipoDos" data-aos="fade-up" data-aos-duration="3000">
+                <img src="../imgs/cine.jpg" alt="Evento del Festival Internacional de Cine De Medellín"
+                    class="p10 img-fluid imagen">
+                <h2 class="p10 Titulo" data-aos="fade-right" data-aos-duration="3000">FESTIVAL INTERNACIONAL
+                    DE CINE DE MEDELLIN</h2>
+                <p class="p10 Texto">El Festival Internacional de Cine
+                    de Medellín ha sido un gran éxito desde su primera edición, con una creciente
+                    asistencia de público y una programación cada vez más diversa y atractiva. El
+                    festival se ha convertido en una plataforma importante para el cine nacional e
+                    internacional en Colombia, y ha contribuido a posicionar a Medellín como una ciudad
+                    cultural y turística en el país.</p>
             </div>
+
+
 
         </main>
 
@@ -105,6 +129,11 @@
         </footer>
 
     </div>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
